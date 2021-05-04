@@ -9,7 +9,7 @@ Tecnologías que usaremos:
 - CSS
     - Sass
 - JavaScript
-    -Librerías
+    - Librerías
         - ChartJS
         - LeafLet
         - DataTables

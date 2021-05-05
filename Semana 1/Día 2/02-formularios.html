@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form>div {
+          margin-bottom: 8px;
+        }
+      </style>
+</head>
+<style>
+    body {
+      background-color: #222;
+      color: #eee;
+      font-family: sans-serif;
+    }
+  </style>
+<body>
+
+    <header>
+        <h1>Formularios en HTML</h1>
+    </header>
+    <main>
+
+        <form>
+            <div>
+                <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" placeholder="Ejm:Aea" />
+            </div>
+            <div>
+                <label for="Segundo Nombre">Segundo Nombre:</label>
+            <input type="text" id="Segundo Nombre" placeholder="Ejm:xd" />
+            </div>
+            <div>
+                <label for="Edad">Edad:</label>
+                <input type="number" id="Edad" placeholder="Ejm:123213213" />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Ejm:awadsdwadwad@email.com" />
+            </div>
+            <div>
+                <label for="Fecha">Fecha de Matrícula:</label>
+                <input type="date" id="Fecha" />
+            </div>
+            <div>
+                <label for="Curso">Seleccione Curso</label>
+                <select id="Curso">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div>
+                <label for="Mensaje">Mensaje:</label>
+                <br />
+                <textarea id="Mensaje" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="">Escoja Turno:</label>
+                <br />
+                <label for="Día">Día</label>
+                <input type="radio" id="Día" name="Turno" />
+                <br />
+                <label for="Noche">Noche</label>
+                <input type="radio" id="Noche" name="Turno" />
+            </div>
+            <div>
+                <label for="">Seleccione</label>
+                <br />
+                <label for="A">A</label>
+                <input type="checkbox" id="A" />
+                <br />
+                <label for="B">B</label>
+                <input type="checkbox" id="B" />
+                <br />
+                <label for="C">C</label>
+                <input type="checkbox" id="C" />
+            </div>
+        </form>
+
+    </main>
+
+</body>
+</html>

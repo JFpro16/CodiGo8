@@ -24,27 +24,31 @@
 <body>
 
     <header>
-        <h1>Formularios en HTML</h1>
+        <h1>Formularios en HTML-Validación</h1>
     </header>
     <main>
 
         <form>
             <div>
                 <label for="Nombre">Nombre:</label>
-                <input type="text" id="Nombre" placeholder="Ejm:Aea" />
+                <input type="text" id="Nombre" placeholder="Ejm:Aea" required />
             </div>
             <div>
                 <label for="Segundo Nombre">Segundo Nombre:</label>
-                <input type="text" id="Segundo Nombre" placeholder="Ejm:xd" />
+                <input type="text" id="Segundo Nombre" placeholder="Ejm:xd" required minlength="2" />
             </div>
             <div>
                 <label for="Edad">Edad:</label>
-                <input type="number" id="Edad" placeholder="Ejm:123213213" />
+                <input type="number" id="Edad" placeholder="Ejm:123213213" min="314311215154" max="134153154115431" />
+            </div>
             </div>
             <div>
                 <label for="email">Email:</label>
                 <input type="email" id="email" placeholder="Ejm:awadsdwadwad@email.com" />
             </div>
+            <div>
+                <label for="Contra">Password:</label>
+                <input type="password" id="Contra" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Mínimo 8 carácteres, una máyuscula, una minúscula y un número" />
             <div>
                 <label for="Fecha">Fecha de Matrícula:</label>
                 <input type="date" id="Fecha" />
@@ -54,7 +58,7 @@
                 <select id="Curso">
                     <option value="1">1</option>
                     <option value="2">2</option>
-                    <option value="3">3</option>
+                    <option value="3" selected>3</option>
                 </select>
             </div>
             <div>

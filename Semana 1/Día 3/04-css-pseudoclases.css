@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+}
+
+
 /*
 De cada grupo de elementos, el que se ocupe la 3ra posición, será afectado
 */
@@ -15,4 +20,63 @@ tbody tr:nth-child(odd){
 /*even par*/
 tbody tr:nth-child(even){
      background-color: #aaa;
+}
+/*La tercera columna de los grupos de "td" y "th"*/
+td:nth-child(3), th:nth-child(3){
+    background-color: crimson;
+}
+
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+
+/*Cómo quitar el margen entre celdas a una tabla*/
+table{
+    border-collapse: collapse;
+}
+thead tr:first-child th:last-child{
+    border-top-right-radius: 10px;
+}
+thead tr:first-child th:first-child{
+    border-top-left-radius: 10px;
+}
+thead{
+    background-color: orange;
+}
+
+nav li{
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-right: 10px;
+    color: #444;
+}
+/*Todos los elementos que tengan la clase "nav-link" pero que además tengan la clase "active"*/
+.nav-link.active {
+    font-style: italic;
+}
+
+/*Todos los elementos "p" que sean hermanos de un "h2"*/
+h2~p {
+    color: orange;
+}
+/*El primer hermano "p" de un "h3"*/
+h3+p {
+    color:crimson
+}
+/*Todos los elemento "article" excepto aquellos que tengan la clase "Agotado"*/
+article:not(.Agotado){
+
+    width: 300px;
+    box-shadow: 0px 0px 8px #888;
+}
+/*Todos los hijos de "article" excepto los "h4"*/
+article :not(h4) {
+    font-style: italic;
 }

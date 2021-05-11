@@ -1,0 +1,54 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face{
+    font-family: MiPrimeraFuente;
+    src: url('../FuentesGlobales/Montserrat-Regular.ttf');
+}
+@font-face{
+    font-family: Medium;
+    src: url('../FuentesGlobales/Montserrat-Medium.ttf');
+}
+@font-face{
+    font-family: Bold;
+    src: url('../FuentesGlobales/Montserrat-Bold.ttf');
+}
+
+h1, h2{
+    font-family: "MiPrimeraFuente";
+    color: crimson;
+}
+
+.Descripción{
+    font-family: MiPrimeraFuente;
+    width: 200px;
+    font-family: "Medium";
+    font-size: 12px;
+    height: 80px;
+    overflow: scroll;
+}
+
+.Título2{
+    font-family: Bold;
+}
+
+.fuente__link{
+    font-family: 'Courgette', cursive;
+}
+
+a{
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 6px;
+    font-family: MiPrimeraFuente;
+}
+
+a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid;
+}

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root {
+  --color-machu-picchu: #132121;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(44, 42, 42);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .tarjeta {
+    width: 400px;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgb(29, 28, 28);
+    margin: 100px auto 0 auto;
+  }
+  
+  .tarjeta__img {
+    height: 450px;
+    background-color: aqua;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+  
+  .tarjeta__img img {
+    position: relative;
+    height: 500px;
+    left: -340px;
+    top: -10px;
+    transition: all 0.5s ease;
+  }
+  
+  .tarjeta__img .tarjeta__fecha {
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background-color: var(--color-machu-picchu);
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding-top: 9px;
+  }
+  
+  .tarjeta__img .tarjeta__fotos {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-machu-picchu);
+    color: white;
+    text-align: center;
+    z-index: 100;
+    padding: 8px 15px;
+  }
+  
+  .tarjeta__info {
+    background-color: white;
+    height: 200px;
+    padding: 1.5rem;
+    transition: all 0.5s ease;
+    position: relative;
+  }
+  
+  .tarjeta__info .tarjeta__título {
+    color: rgb(37, 37, 37);
+    margin-bottom: 1rem;
+  }
+  
+  .tarjeta__info .tarjeta__eslogan {
+    color: var(--color-machu-picchu);
+    margin-bottom: 3rem;
+  }
+  
+  .tarjeta__info .tarjeta__descripción {
+    color: #666;
+    line-height: 2rem;
+    font-size: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .tarjeta__info .tarjeta__retroalimentación {
+    position: absolute;
+    bottom: 2rem;
+  }
+  
+  .tarjeta__info .tarjeta__retroalimentación li {
+    display: inline-block;
+    color: #aaa;
+  }
+  
+  .tarjeta__info .tarjeta__retroalimentación li:first-child {
+    margin-right: 30px;
+  }
+  
+  .tarjeta:hover .tarjeta__img {
+    height: 240px;
+  }
+  
+  .tarjeta:hover .tarjeta__img img {
+    filter: brightness(0.5);
+  }
+  
+  .tarjeta:hover .tarjeta__info {
+    height: 410px;
+  }
+  
+  .tarjeta:hover .tarjeta__info .tarjeta__descripción {
+    font-size: 1rem;
+    opacity: 1;
+    margin-bottom: 3rem;
+  }
+  
+  .tarjeta:hover .tarjeta__eslogan {
+    margin-bottom: 1rem;
+  }

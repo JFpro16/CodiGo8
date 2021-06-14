@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado{
+            width: 100px;
+            height: 100px;
+            box-shadow: 0px 0px 8px #555;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.google.com">Click Google</a>
+    <div class="cuadrado"></div>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+                <label for="inputNombre">Nombre</label>
+                <input type="text" placeholder="Ejm: Rex" id="inputNombre" />
+            </p>
+            <p>
+                <label for="">País</label>
+                <select name="" id="selectPaís">
+                    <option value="0">Seleccione País</option>
+                    <option value="1">Perú</option>
+                    <option value="2">Ecuador</option>
+                    <option value="3">Argentina</option>
+                </select>
+            </p>
+            <button type="button" id="btnProcesar">Procesar Información</button>
+            <button type="button" id="btnValidar">Validar Información</button>
+        </fieldset>
+    </form>
+    <script src="./03-eventos.js"></script>
+</body>
+</html>

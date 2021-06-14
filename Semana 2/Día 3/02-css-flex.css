@@ -1,0 +1,28 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+.h{
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.h__nav{
+    flex: 1;
+    background-color: aqua;
+}
+
+.h__cart{
+    background-color: brown;
+}
+
+.h__links{
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}

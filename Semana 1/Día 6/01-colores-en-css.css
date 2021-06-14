@@ -1,0 +1,63 @@
+
+:root{
+    --pri: #c00;
+    --sec: rgb(207, 18, 224);
+    --tras: rgb(199, 194, 194);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+h1{
+    color: var(--pri);
+    background-color: #ddd;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+
+.fc{
+    border: none;
+    outline: none;
+    padding: 8px;
+    border: 1px solid rebeccapurple;
+    border-bottom: 1px solid var(--pri);
+    background-image: url(../ImagenesGlobales/IM.jpg);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 24px 24px;
+    border-radius: 5px;
+}
+
+.c{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--sec);
+}
+
+.pa::-webkit-scrollbar {
+    width: 10px;
+}
+
+.pa::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: crimson;
+}
+
+.pa::-webkit-scrollbar-track {
+    background-color: rgb(187, 17, 110);
+}
+
+.br{
+    width: 100px;
+    height: 100px;
+}
+
+.imagen{
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
